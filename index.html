@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>three.js webgl - loaders - vrml loader</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+		<script src="libraries/three.js"></script>
+		<script src="libraries/OrbitControls.js"></script>
+		<script src="libraries/WebGL.js"></script>
+		<script src="libraries/stats.min.js"></script>
+		<script src="libraries/DDSLoader.js"></script>
+		<script src="libraries/MTLLoader.js"></script>
+		<script src="libraries/OBJLoader.js"></script>
+		<script src="libraries/GLTFLoader.js"></script>
+		<script src="libraries/dat.gui.min.js"></script>
+		<script src="libraries/tween.min.js"></script>
+		<script src="libraries/CSS2DRenderer.js"></script>
+		
+		<style>
+			body {
+				font-family:  monospace;
+				background-color: #000;
+				color: #fff;
+				margin: 0px;
+				overflow: hidden;
+			}
+			#info {
+				color: #fff;
+				position: absolute;
+				top: 10px;
+				width: 100%;
+				text-align: center;
+				z-index: 100;
+				display:block;
+			}
+			#info a, .button {
+				color: #f00;
+				font-weight: bold;
+				text-decoration: underline;
+				cursor: pointer
+			}
+		</style>
+	</head>
+
+	<body>
+	<div class="annotation">
+			<p><strong>Датчик</strong></p>
+			<p>Информация.</p>
+		</div>
+		<canvas id="number" width="64" height="64"></canvas>
+		<script src="Factory.js"></script>
+		<script src="LoadGLTFModel.js"></script>
+		<script src="LoadOBJModel.js"></script>
+	</body>
+</html>

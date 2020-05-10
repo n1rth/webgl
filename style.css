@@ -1,0 +1,44 @@
+canvas {
+    width: 100%;
+    height: 20px;
+    display: block;
+  }
+  
+  .annotation {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    margin-left: 1px;
+    margin-top: 1px;
+    padding: 1px 10px 1px;
+    width: 100px;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.8);
+    border-radius: .5em;
+    font-size: 12px;
+    line-height: 1.2;
+    transition: opacity .5s;
+    text-transform: uppercase;
+    white-space: nowrap;
+    cursor: pointer;
+  }
+  .annotation::before {
+    content: '1';
+    position: absolute;
+    top: -20px;
+    left: -20px;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    font-size: 12px;
+    line-height: 20px;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.8);
+  }
+  
+  #number {
+    position: absolute;
+    z-index: -1;
+  }
